@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.akansh.notesappmvvm.mvvmArch.Note
 
 class NotesAdapter(private val ctx: Context, private val listener: INotesAdapter): RecyclerView.Adapter<NotesAdapter.NoteViewHolder>() {
 

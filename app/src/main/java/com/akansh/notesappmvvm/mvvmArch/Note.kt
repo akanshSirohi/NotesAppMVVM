@@ -1,4 +1,4 @@
-package com.akansh.notesappmvvm
+package com.akansh.notesappmvvm.mvvmArch
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

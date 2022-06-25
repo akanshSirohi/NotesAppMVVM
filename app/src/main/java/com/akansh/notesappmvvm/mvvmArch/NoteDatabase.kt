@@ -1,4 +1,4 @@
-package com.akansh.notesappmvvm
+package com.akansh.notesappmvvm.mvvmArch
 
 import android.content.Context
 import androidx.room.Database

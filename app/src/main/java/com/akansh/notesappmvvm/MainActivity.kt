@@ -8,6 +8,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.akansh.notesappmvvm.mvvmArch.Note
+import com.akansh.notesappmvvm.mvvmArch.NoteViewModel
 
 class MainActivity : AppCompatActivity(),INotesAdapter {
 
@@ -31,7 +33,8 @@ class MainActivity : AppCompatActivity(),INotesAdapter {
             }
         }
 
-        viewModel = ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory.getInstance(application)).get(NoteViewModel::class.java)
+        viewModel = ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory.getInstance(application)).get(
+            NoteViewModel::class.java)
         viewModel.allNotes.observe(this, Observer { list ->
             list?.let {
                 adapter.updateList(it)
